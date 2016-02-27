@@ -1,7 +1,7 @@
 {
   "name": "learning-es6",
   "version": "0.0.0",
-  "description": "The training kit for learning ECMAScript 6 / ES2015",
+  "description": "This training kit has been developed to learn the basics of ECMAScript 6 also known as ECMAScript 2015",
   "repository": {
     "type": "git",
     "url": "https://github.com/Code-by-practice/learning-es6.git"
