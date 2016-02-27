@@ -43,7 +43,8 @@ function counter() {
   console.log(employee);
 
   /**
-   * Below will work
+   * Below will work;
+   * `const` prevents modification of the binding, not modification of the bound value.
    */
   employee.name = "Kumar Kundan";
   employee.level = "Manager";
