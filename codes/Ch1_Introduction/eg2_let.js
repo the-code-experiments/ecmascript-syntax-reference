@@ -1,9 +1,4 @@
 /**
- * `var` are treated as global scope, if they are declared outside the function.
- * this is called var hoisting.
- */
-
-/**
  * For Node environment,
  * Block-scoped declarations (let, const, function, class) not yet supported outside strict mode
  */
