@@ -1,6 +1,5 @@
 /**
  * Understanding `var` & `let` behavior in terms of declaration.
- *
  */
 require('./eg1_let');
 
@@ -18,3 +17,8 @@ require('./eg3_let');
  * More understanding `var` & `let` behavior in terms of functions in loop.
  */
 require('./eg4_let');
+
+/**
+ * Understanding `const` behavior in terms of declaration & scope.
+ */
+require('./eg5_constant');
