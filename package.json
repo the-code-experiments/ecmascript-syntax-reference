@@ -11,5 +11,10 @@
   "bugs": {
     "url": "https://github.com/Code-by-practice/learning-es6/issues"
   },
-  "homepage": "https://github.com/Code-by-practice/learning-es6#readme"
+  "homepage": "https://github.com/Code-by-practice/learning-es6#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.12.14"
+  }
 }
