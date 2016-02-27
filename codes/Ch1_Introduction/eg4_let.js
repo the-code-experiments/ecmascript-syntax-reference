@@ -62,3 +62,34 @@ function counter(no) {
 
 }
 counter(5);
+
+/**
+ * Tips:
+ * - The above code cleaning applies to `for-in` loop also for `object`
+ */
+function objectCounter() {
+
+  var employees = [],
+    names = {
+      "Ashwin": "Engineer",
+      "Kumar": "Manager",
+      "AjayS": "Sr Engineer",
+      "Saju": "Sr Engineer",
+      "Jerin": "Engineer",
+      "AjayP": "Sr Engineer",
+      "Rajan": "Engineer"
+    };
+
+  for(let name in names) {
+    employees.push(function() {
+      console.log(name + ", " + names[name]);
+    });
+  }
+
+  // This will out "`i` value inside the `for` loop:  5" 5 times
+  employees.forEach(function(func) {
+    func();
+  });
+
+}
+objectCounter();
