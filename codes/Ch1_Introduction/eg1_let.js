@@ -55,11 +55,11 @@ function message(name) {
     return name + ", " + msg;
   } else {
     // here the msg value does not exists, the `msg` will never declared or initialized.
-    console.log(msg); // Try to console, will throw an error "msg is not defined"
+    console.log(msg); // Try to console, will throw an error "ReferenceError: msg is not defined"
     return "Hi!";
   }
   // here the msg value does not exists
 }
 
 console.log(message("Ashwin Hegde"));
-// console.log(message()); // This will throw an error "msg is not defined"
+// console.log(message()); // This will throw an error "ReferenceError: msg is not defined"
