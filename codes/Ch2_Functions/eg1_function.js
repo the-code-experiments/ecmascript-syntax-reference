@@ -50,3 +50,13 @@ Person("Ashwin Hegde", 25);
  * name = "Ashwin Hegde", age = 25 (Overrite the default), work = Full Stack Engineer (Overrite the default)
  */
 Person("Ashwin Hegde", 27, "Full Stack Engineer");
+
+/**
+ * name = "Ashwin Hegde", age is passed as undefined so it default to 18, work = Sr Engineer (Overrite the default)
+ */
+Person("Ashwin Hegde", undefined, "Sr Engineer");
+
+/**
+ * name = "Ashwin Hegde", age = null (Overrite the default), work = Sr Engineer (Overrite the default)
+ */
+Person("Ashwin Hegde", null, "Sr Engineer");
