@@ -1,7 +1,7 @@
 /**
  * In Node environment for default parameter for function are "In Progress".
  * Command to run the program:
- * node --harmony_default_parameters eg2_function.js
+ * node --harmony_default_parameters eg3_function.js
  */
 // 'use strict';
 
