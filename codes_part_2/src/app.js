@@ -24,6 +24,18 @@ class Person {
      */
     this.fname = fname;
     this.lname = lname;
+
+  }
+
+  /**
+   * coding is class method.
+   */
+  coding() {
+    return this.fname + ' ' + this.lname + ' is coding!';
+  }
+
+  static training() {
+    return 'Training is in Progress!';
   }
 };
 
@@ -38,7 +50,7 @@ Person.department = 'Engineering';
 console.log('Type of Person class: ', typeof Person); // function
 
 /**
- * We can create instance of class. so that we can access member variables and functions.
+ * We can create instance of class. so that we can access member variables and method.
  */
 let person1 = new Person();
 
@@ -70,8 +82,23 @@ console.log('Class Properties using (.): ', person2.fname + ' ' + person2.lname)
 console.log('Class Properties using [string]: ', person2['fname'] + ' ' + person2['lname']);
 
 /**
- * How to access static properties with Class and Instance
+ * Access static properties with Class and Instance
  */
 console.log('Static Properties using Class: ', Person.department);
 
 console.log('Static Properties using Instance: ', person2.department);
+
+/**
+ * Access class methods
+ */
+console.log(person2.coding());
+
+/**
+ * Access class static methods using Class and Instance
+ */
+console.log(Person.training());
+
+/**
+ * This will be error, as static method cannot be access with instance
+ */
+// console.log(person2.training());
