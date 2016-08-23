@@ -25,6 +25,22 @@ class Person {
     this.fname = fname;
     this.lname = lname;
 
+    /**
+     * This are not private variables in JavaScript.
+     * We can use _<var-name> convension to represent private variables
+     */
+    this._fullName = fname + ' ' + lname;
+  }
+
+  /**
+   * By using getter function we can return the private variable.
+   */
+  get fullName() {
+    return this._fullName;
+  }
+
+  set fullName(name) {
+    this._fullName = name;
   }
 
   /**
@@ -34,8 +50,15 @@ class Person {
     return this.fname + ' ' + this.lname + ' is coding!';
   }
 
+  /**
+   * training is class static method. It only exist to class and not to instance
+   */
   static training() {
-    return 'Training is in Progress!';
+    /**
+     * class properties cannot be access with static methods
+     */
+    console.log('Access static properties with static method: ', this.department);
+    return this.fname + ' ' + this.lname + ' is training!';
   }
 };
 
@@ -82,10 +105,9 @@ console.log('Class Properties using (.): ', person2.fname + ' ' + person2.lname)
 console.log('Class Properties using [string]: ', person2['fname'] + ' ' + person2['lname']);
 
 /**
- * Access static properties with Class and Instance
+ * Access static properties with Class and Instance.
  */
 console.log('Static Properties using Class: ', Person.department);
-
 console.log('Static Properties using Instance: ', person2.department);
 
 /**
@@ -94,11 +116,22 @@ console.log('Static Properties using Instance: ', person2.department);
 console.log(person2.coding());
 
 /**
- * Access class static methods using Class and Instance
+ * Access class static methods using Class and Instance.
  */
 console.log(Person.training());
 
 /**
- * This will be error, as static method cannot be access with instance
+ * This will be error, as static method cannot be access with instance.
  */
 // console.log(person2.training());
+
+/**
+ * Access getter function like a property instead of function.
+ */
+console.log('Using GET: ', person2.fullName);
+
+/**
+ * Access setter function.
+ */
+person2._fullName = 'Kumar Kundan';
+console.log('Using SET: ', person2.fullName);
