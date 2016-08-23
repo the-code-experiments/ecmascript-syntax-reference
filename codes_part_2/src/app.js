@@ -18,10 +18,19 @@ class Person {
    * any heavy operations in constructor
    */
   constructor(fname, lname) {
+    /**
+     * this.fname & this.lname are class properties.
+     * these properties value are different for each instance.
+     */
     this.fname = fname;
     this.lname = lname;
   }
 };
+
+/**
+ * Static properties (this is same way in ES5)
+ */
+Person.department = 'Engineering';
 
 /**
  * Class are functions
@@ -50,5 +59,19 @@ let person2 = new Person('Ashwin', 'Hegde');
 
 /**
  * Get the passed parameters with the help of class instance.
+ * using (.) way
  */
-console.log('Name: ', person2.fname + ' ' + person2.lname);
+console.log('Class Properties using (.): ', person2.fname + ' ' + person2.lname);
+
+/**
+ * Get the passed parameters with the help of class instance.
+ * using [string] way
+ */
+console.log('Class Properties using [string]: ', person2['fname'] + ' ' + person2['lname']);
+
+/**
+ * How to access static properties with Class and Instance
+ */
+console.log('Static Properties using Class: ', Person.department);
+
+console.log('Static Properties using Instance: ', person2.department);
