@@ -24,3 +24,17 @@ dataService.loadData(engineers);
  */
 console.log('Technical Team: ', dataService.technical);
 console.log('Management Team: ', dataService.management);
+
+/**
+ * Loop through Technical data
+ */
+for (let engineer of dataService.technical) {
+  console.log(engineer.name + ' is from ' + engineer.department + ' department');
+}
+
+/**
+ * Loop through Management data
+ */
+for(let engineer of dataService.management) {
+  console.log(engineer.name + ' is from ' + engineer.department + ' department');
+}
