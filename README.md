@@ -1,7 +1,22 @@
-# learning-ES6
+# ECMAScript Syntax Reference
 
-## Table of Content
-|Ch.No.|Execution Command|Comments|
-|------|-----------------|--------|
-|1 Introduction|```node --harmony codes/Ch1_Introduction/eg<no>_<name>.js```|Covers the understanding of var, let and const|
-|2 Functions|```node --harmony_default_parameters codes/Ch2_Function/eg<no>_<name>.js```|Covers the understanding of function & default parameters|
+A complete training kit on ECMAScript/JavaScript 6 or above syntax for beginners.
+
+## Author & Contributors
+
+We really appreciate all kind of contributions.
+
+Special thanks to [contributors](https://github.com/Code-by-practice/ecmascript-syntax-reference/graphs/contributors) for using and supporting ECMAScript Syntax Reference materials
+
+### Feel free to
+
+* Request a feature 
+* You find any typo errors, enhancements or questions
+* Vote for the ones that are already registered
+* Send the PR
+
+## License
+
+The MIT License (MIT); 
+
+Copyright (c) 2018 Ashwin Hegde
